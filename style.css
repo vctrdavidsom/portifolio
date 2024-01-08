@@ -105,9 +105,9 @@ section.topo-do-site .flex{
 
 @keyframes flutuar{
     0%{
-        top: 0;
+        top: -40px;
     }
     100%{
-        top: 30px;
+        top: 20px;
     }
 }
