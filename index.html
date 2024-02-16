@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!--Bootstrap icons - fim-->
     <title>vctrdavidsom dev</title>
+    <script src="script/menu.js" defer></script>
 </head>
 <body>
     <header>
@@ -37,9 +38,30 @@
                     <button>Contato</button>
                 </a>
             </div>
+            <div class="btn-abrir-menu" id="btn-abrir-menu">
+                <i class="bi bi-list"></i>
+            </div>
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-lg"></i>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Inicio</a></li>
+                        <li><a href="#">Especialidades</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="#">Projetos</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+            </nav>
+            </div><!-- menu-mobile -->
+            <div class="overlay-menu" id="overlay-menu">
+
+            </div>
         </div>
     </header>
     <main>
+
         <section class="topo-do-site">
            <div class="interface">
                 <div class="flex">
@@ -69,17 +91,24 @@
                     <div class="especialidades-box">
                         <i class="bi bi-code-square"></i>
                         <h3>Website</h3>
-                        <p>Lorem ipsun color sit ameet consectetur adipisicing elit. Tempora, nulta rem doloreinvetore delectus at.</p>
+                        <p>Em constante estudo de desenvolvimento web, concentro-me em explorar front-end e back-end. 
+                            Adquiro conhecimentos em HTML, CSS, JavaScript e outras tecnologias para criar interfaces 
+                            atraentes e funcionalidades robustas em websites.</p>
                     </div>
                     <div class="especialidades-box">
-                        <i class="bi bi-cart"></i>
-                        <h3>Loja</h3>
-                        <p>Lorem ipsun color sit ameet consectetur adipisicing elit. Tempora, nulta rem doloreinvetore delectus at.</p>
+                        <i class="bi bi-lightbulb-fill"></i>
+                        <h3>Lógica</h3>
+                        <p>Estudante dedicado de lógica de programação, 
+                        focado na criação de algoritmos eficientes e resolução de problemas complexos. 
+                        Busco compreender profundamente os fundamentos para construir uma base sólida para futuros 
+                        desenvolvimentos.</p>
                     </div>
                     <div class="especialidades-box">
-                        <i class="bi bi-wordpress"></i>
-                        <h3>Blog</h3>
-                        <p>Lorem ipsun color sit ameet consectetur adipisicing elit. Tempora, nulta rem doloreinvetore delectus at.</p>
+                        <i class="bi bi-shield-lock"></i>
+                        <h3>Segurança</h3>
+                        <p>Estudo ativamente segurança digital para garantir a proteção de dados e sistemas. 
+                            Busco identificar vulnerabilidades, adotar medidas preventivas e manter-me atualizado nas 
+                            últimas ameaças cibernéticas.</p>
                     </div>
                 </div>
             </div>
@@ -94,7 +123,7 @@
                     <div class="txt-sobre">
                         <h2>MUITO PRAZER,<br> SOU <span>VICTOR DAVIDSON.</span></h2>
                         <P>Estudante de Engenharia de Software em busca de desafios emocionantes e oportunidades de 
-                            aprendizagem. Comprometida em criar soluções inovadoras e fáceis de usar, utilizando 
+                            aprendizagem. Comprometido em criar soluções inovadoras e fáceis de usar, utilizando 
                             tecnologias de ponta. Quero desenvolver habilidades para me tornar um Engenheiro de Software 
                             qualificado e contribuir para projetos significativos</P>
                             

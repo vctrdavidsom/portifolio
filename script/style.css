@@ -65,7 +65,7 @@ header a{
     display: inline-block;
     transition: 0.5s;
 }
-header a:hover{
+header nav.menu-desktop a:hover{
     color: #fff;
     transform: scale(1.05);
 }
@@ -74,13 +74,73 @@ header nav ul{
     list-style-type: none;
 }
 
-header nav ul li{
+header nav.menu-desktop ul li{
     display: inline-block;
     padding: 0 40px;
 
 }
+/* estilo menu mobile */
+.btn-abrir-menu i{
+    color: #3F87AF;
+    font-size: 30px;
+}
+.overlay-menu{
+    background-color: #000000a7;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 88888;
+    display: none;
+}
+.menu-mobile{
+    background: #000;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    width: 0%;
+    overflow: hidden;
+    transition: .5s;
 
+}
+.btn-abrir-menu{
+    display: none;
+}
 
+.menu-mobile.abrirMenu{
+    width: 70%;
+}
+
+.menu-mobile.abrirMenu ~ .overlay-menu{
+    display: block;
+    transition: .5s;
+}
+
+.menu-mobile nav ul{
+    text-align: right;
+}
+.menu-mobile nav ul li a{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    padding: 20px 8%;
+    display: block;
+}
+.menu-mobile nav ul li a:hover{
+    background-color: #3F87AF;
+}
+.menu-mobile .btn-fechar i{
+    color: #3F87AF;
+    font-size: 30px;
+
+}
+.menu-mobile .btn-fechar{
+    padding: 20px 5%;
+
+}
 /* Estilo Do topo do Site */
 
 section.topo-do-site{
@@ -203,6 +263,7 @@ section.projetos{
 }
 
 .img-proj{
+    margin: 0 auto;
     width: 360px;
     height: 460px;
     background-size: cover;
@@ -233,6 +294,7 @@ section.projetos .flex{
     color: #fff;
     opacity: 0;
     transition: .5s;
+    margin: 0 auto;
 }
 
 .overlay:hover{
@@ -346,6 +408,10 @@ footer .line-footer p a{
 
     /* topo do site */
 
+    .btn-abrir-menu{
+    display: block;
+}
+
     section.topo-do-site{
         padding: 20px 8%;
     
@@ -390,5 +456,17 @@ footer .line-footer p a{
     .img-proj{
         width: 313px;
         height: 400px;
+    }
+
+    /* roda pe */
+
+    footer .flex{
+        flex-direction: column;
+        gap: 30px;
+    
+    }
+
+    footer .line-footer{
+        text-align: center;
     }
 }
